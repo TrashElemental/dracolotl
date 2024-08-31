@@ -42,19 +42,19 @@ public class ModBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_BLOCK)));
 
     public static final DeferredBlock<Block> CHISELED_CHITIN_BRICKS = registerBlock("chiseled_chitin_bricks",
-            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.QUARTZ_PILLAR)));
 
 
 
 //Functional Blocks
     public static final DeferredBlock<Block> SILVERFISH_TRAP = registerBlock("silverfish_trap",
-        () -> new SilverfishTrapBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PISTON)));
+        () -> new SilverfishTrapBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     public static final DeferredBlock<Block> SPIDER_TRAP = registerBlock("spider_trap",
-            () -> new SpiderTrapBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PISTON)));
+            () -> new SpiderTrapBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     public static final DeferredBlock<Block> SPINNERET = registerBlock("spinneret",
-            () -> new SpinneretBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PISTON)));
+            () -> new SpinneretBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
     public static final DeferredBlock<Block> COBWEB_TRAP = registerBlock("cobweb_trap",
             () -> new CobwebTrapBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBWEB)));

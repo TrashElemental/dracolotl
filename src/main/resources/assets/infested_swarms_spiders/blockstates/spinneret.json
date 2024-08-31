@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "infested:block/spinneret"
+      "model": "infested_swarms_spiders:block/spinneret"
     }
   }
 }

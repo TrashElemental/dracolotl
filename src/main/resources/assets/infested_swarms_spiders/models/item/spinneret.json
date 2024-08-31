@@ -1,5 +1,5 @@
 {
-  "parent": "infested:block/spinneret",
+  "parent": "infested_swarms_spiders:block/spinneret",
   "display": {
     "thirdperson": {
       "rotation": [

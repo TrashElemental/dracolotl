@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "infested:block/cobweb_trap",
-		"particle": "infested:block/cobweb_trap"
+		"0": "infested_swarms_spiders:block/cobweb_trap",
+		"particle": "infested_swarms_spiders:block/cobweb_trap"
 	},
 	"elements": [
 		{

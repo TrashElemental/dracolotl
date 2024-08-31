@@ -1,9 +1,17 @@
 package net.trashelemental.infested;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.util.Tuple;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.trashelemental.infested.block.ModBlocks;
 import net.trashelemental.infested.entity.ModEntities;
+import net.trashelemental.infested.entity.client.renderers.TamedSpiderRenderer;
+import net.trashelemental.infested.entity.client.renderers.minions.AttackSilverfishRenderer;
+import net.trashelemental.infested.entity.client.renderers.minions.AttackSpiderRenderer;
+import net.trashelemental.infested.entity.client.renderers.minions.SilverfishMinionRenderer;
+import net.trashelemental.infested.entity.client.renderers.minions.SpiderMinionRenderer;
+import net.trashelemental.infested.entity.custom.minions.AttackSilverfishEntity;
 import net.trashelemental.infested.item.ModCreativeModeTabs;
 import net.trashelemental.infested.item.ModItems;
 import net.trashelemental.infested.magic.brewing.ModPotions;
@@ -81,32 +89,45 @@ public class InfestedSwarmsAndSpiders
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+            EntityRenderers.register(ModEntities.SILVERFISH_MINION.get(), SilverfishMinionRenderer::new);
+            EntityRenderers.register(ModEntities.ATTACK_SILVERFISH.get(), AttackSilverfishRenderer::new);
+            EntityRenderers.register(ModEntities.SPIDER_MINION.get(), SpiderMinionRenderer::new);
+            EntityRenderers.register(ModEntities.ATTACK_SPIDER.get(), AttackSpiderRenderer::new);
+            EntityRenderers.register(ModEntities.TAMED_SPIDER.get(), TamedSpiderRenderer::new);
 
+//            EntityRenderers.register(ModEntities.CRIMSON_BEETLE.get(), CrimsonBeetleRenderer::new);
+//            EntityRenderers.register(ModEntities.GRUB.get(), GrubRenderer::new);
+//            EntityRenderers.register(ModEntities.BRILLIANT_BEETLE.get(), BrilliantBeetleRenderer::new);
+//            EntityRenderers.register(ModEntities.MANTIS.get(), MantisRenderer::new);
+//            EntityRenderers.register(ModEntities.ORCHID_MANTIS.get(), OrchidMantisRenderer::new);
+
+//            EntityRenderers.register(ModEntities.HARVEST_BEETLE.get(), HarvestBeetleRenderer::new);
+//            EntityRenderers.register(ModEntities.JEWEL_BEETLE.get(), JewelBeetleRenderer::new);
+//            EntityRenderers.register(ModEntities.CHORUS_BEETLE.get(), ChorusBeetleRenderer::new);
+//            EntityRenderers.register(ModEntities.ANCIENT_DEBREETLE.get(), AncientDebreetleRenderer::new);
 
         }
     }
 
 
 
-//    private static final Collection<Tuple<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
+    private static final Collection<AbstractMap.SimpleEntry<Runnable, Integer>> workQueue = new ConcurrentLinkedQueue<>();
 
-//    public static void queueServerWork(int tick, Runnable action) {
- //       if (Thread.currentThread().getThreadGroup() == SidedThreadGroups.SERVER)
- //           workQueue.add(new Tuple<>(action, tick));
-//    }
+    public static void queueServerWork(int tickDelay, Runnable action) {
+        workQueue.add(new AbstractMap.SimpleEntry<>(action, tickDelay));
+    }
 
- //   @SubscribeEvent
- //   public void tick(TickEvent.ServerTickEvent event) {
-  //      if (event.phase == TickEvent.Phase.END) {
-  //          List<Tuple<Runnable, Integer>> actions = new ArrayList<>();
-  //          workQueue.forEach(work -> {
-  //              work.setB(work.getB() - 1);
-   //             if (work.getB() == 0)
-   //                 actions.add(work);
-   //         });
-    //        actions.forEach(e -> e.getA().run());
-    //        workQueue.removeAll(actions);
-   //     }
-    //}
+    @SubscribeEvent
+    public void onServerTick(ServerTickEvent.Post event) {
+        List<AbstractMap.SimpleEntry<Runnable, Integer>> actionsToRun = new ArrayList<>();
+        workQueue.forEach(work -> {
+            work.setValue(work.getValue() - 1);
+            if (work.getValue() <= 0) {
+                actionsToRun.add(work);
+            }
+        });
+        actionsToRun.forEach(work -> work.getKey().run());
+        workQueue.removeAll(actionsToRun);
+    }
 
 }

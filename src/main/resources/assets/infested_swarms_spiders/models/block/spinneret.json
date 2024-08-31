@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "infested:block/machine_bottom",
-    "up": "infested:block/spider_trap",
-    "north": "infested:block/machine_side",
-    "east": "infested:block/machine_side",
-    "south": "infested:block/machine_side",
-    "west": "infested:block/machine_side",
-    "particle": "infested:block/machine_side"
+    "down": "infested_swarms_spiders:block/machine_bottom",
+    "up": "infested_swarms_spiders:block/spider_trap",
+    "north": "infested_swarms_spiders:block/machine_side",
+    "east": "infested_swarms_spiders:block/machine_side",
+    "south": "infested_swarms_spiders:block/machine_side",
+    "west": "infested_swarms_spiders:block/machine_side",
+    "particle": "infested_swarms_spiders:block/machine_side"
   },
   "render_type": "solid"
 }

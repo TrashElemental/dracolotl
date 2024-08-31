@@ -5,6 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.trashelemental.infested.InfestedSwarmsAndSpiders;
+import net.trashelemental.infested.item.armor.custom.ChitinArmorItem;
+import net.trashelemental.infested.item.armor.custom.SpiderArmorItem;
 import net.trashelemental.infested.item.custom.BugStewItem;
 import net.trashelemental.infested.item.custom.SilverfishEggsItem;
 import net.trashelemental.infested.item.custom.SpiderEggItem;
@@ -44,23 +46,27 @@ public class ModItems {
 
 
     //Armor Items
-   // public static final DeferredItem<Item> CHITIN_HELMET = ITEMS.register("chitin_helmet",
-   //         ChitinArmorItem.Helmet::new);
-   // public static final DeferredItem<Item> CHITIN_CHESTPLATE = ITEMS.register("chitin_chestplate",
-   //         ChitinArmorItem.Chestplate::new);
-   // public static final DeferredItem<Item> CHITIN_LEGGINGS = ITEMS.register("chitin_leggings",
-     //       ChitinArmorItem.Leggings::new);
-   // public static final DeferredItem<Item> CHITIN_BOOTS = ITEMS.register("chitin_boots",
-   //         ChitinArmorItem.Boots::new);
+    public static final DeferredItem<Item> CHITIN_HELMET = ITEMS.register("chitin_helmet",
+            () -> new ChitinArmorItem(new Item.Properties()));
+         //   ChitinArmorItem.Helmet::new);
+    public static final DeferredItem<Item> CHITIN_CHESTPLATE = ITEMS.register("chitin_chestplate",
+                 () -> new ChitinArmorItem(new Item.Properties()));
+           // ChitinArmorItem.Chestplate::new);
+    public static final DeferredItem<Item> CHITIN_LEGGINGS = ITEMS.register("chitin_leggings",
+                   () -> new ChitinArmorItem(new Item.Properties()));
+            // ChitinArmorItem.Leggings::new);
+    public static final DeferredItem<Item> CHITIN_BOOTS = ITEMS.register("chitin_boots",
+                    () -> new ChitinArmorItem(new Item.Properties()));
+            // ChitinArmorItem.Boots::new);
 
-   // public static final DeferredItem<Item> SPIDER_HELMET = ITEMS.register("spider_helmet",
-   //         SpiderArmorItem.Helmet::new);
-   // public static final DeferredItem<Item> SPIDER_CHESTPLATE = ITEMS.register("spider_chestplate",
-   //         SpiderArmorItem.Chestplate::new);
-   // public static final DeferredItem<Item> SPIDER_LEGGINGS = ITEMS.register("spider_leggings",
-   //         SpiderArmorItem.Leggings::new);
-   // public static final DeferredItem<Item> SPIDER_BOOTS = ITEMS.register("spider_boots",
-   //         SpiderArmorItem.Boots::new);
+    public static final DeferredItem<Item> SPIDER_HELMET = ITEMS.register("spider_helmet",
+            () -> new SpiderArmorItem(new Item.Properties()));
+    public static final DeferredItem<Item> SPIDER_CHESTPLATE = ITEMS.register("spider_chestplate",
+            () -> new SpiderArmorItem(new Item.Properties()));
+    public static final DeferredItem<Item> SPIDER_LEGGINGS = ITEMS.register("spider_leggings",
+            () -> new SpiderArmorItem(new Item.Properties()));
+    public static final DeferredItem<Item> SPIDER_BOOTS = ITEMS.register("spider_boots",
+            () -> new SpiderArmorItem(new Item.Properties()));
 
 
     //Spawn Eggs
