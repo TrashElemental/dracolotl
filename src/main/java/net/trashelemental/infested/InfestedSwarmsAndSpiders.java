@@ -1,8 +1,7 @@
 package net.trashelemental.infested;
 
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.util.Tuple;
-import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.trashelemental.infested.block.ModBlocks;
 import net.trashelemental.infested.entity.ModEntities;
@@ -11,12 +10,10 @@ import net.trashelemental.infested.entity.client.renderers.minions.AttackSilverf
 import net.trashelemental.infested.entity.client.renderers.minions.AttackSpiderRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.SilverfishMinionRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.SpiderMinionRenderer;
-import net.trashelemental.infested.entity.custom.minions.AttackSilverfishEntity;
 import net.trashelemental.infested.item.ModCreativeModeTabs;
 import net.trashelemental.infested.item.ModItems;
 import net.trashelemental.infested.magic.brewing.ModPotions;
 import net.trashelemental.infested.magic.effects.ModMobEffects;
-import net.trashelemental.infested.magic.enchantments.ModEnchantments;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -59,7 +56,6 @@ public class InfestedSwarmsAndSpiders
         ModBlocks.register(modEventBus);
         ModPotions.register(modEventBus);
         ModMobEffects.register(modEventBus);
-        ModEnchantments.register(modEventBus);
         ModEntities.register(modEventBus);
 
     }
@@ -128,6 +124,10 @@ public class InfestedSwarmsAndSpiders
         });
         actionsToRun.forEach(work -> work.getKey().run());
         workQueue.removeAll(actionsToRun);
+    }
+
+    public static ResourceLocation prefix(String string) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, string);
     }
 
 }

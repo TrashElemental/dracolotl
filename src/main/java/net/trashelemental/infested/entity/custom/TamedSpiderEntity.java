@@ -280,30 +280,45 @@ public class TamedSpiderEntity extends TamableAnimal {
             if (itemStack.is(Items.SPIDER_EYE)) {
                 this.POTION_EFFECT ="POISON";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Poison"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
             } else if (itemStack.is(Items.FERMENTED_SPIDER_EYE)) {
                 this.POTION_EFFECT ="WEAKNESS";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Weakness"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
             } else if (itemStack.is(Items.SUGAR)) {
                 this.POTION_EFFECT ="MOVEMENT_SLOW";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Slowness"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
             } else if (itemStack.is(Items.PUFFERFISH)) {
                 this.POTION_EFFECT ="CONFUSION";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Nausea"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
             } else if (itemStack.is(Items.WITHER_SKELETON_SKULL)) {
                 this.POTION_EFFECT ="WITHER";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Wither"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
             } else if (itemStack.is(Items.SHULKER_SHELL)) {
                 this.POTION_EFFECT ="LEVITATION";
                 pPlayer.displayClientMessage(Component.literal("Spider will inflict Levitation"), true);
+                if (!pPlayer.isCreative()) {
+                    itemStack.shrink(1);
+                }
                 return true;
-            }
-            if (!pPlayer.isCreative()) {
-                itemStack.shrink(1);
             }
         }
         return false;

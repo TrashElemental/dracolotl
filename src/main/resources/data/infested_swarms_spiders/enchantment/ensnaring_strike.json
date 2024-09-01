@@ -1,0 +1,23 @@
+{
+  "description": {
+    "translate": "enchantment.infested_swarms_spiders.ensnaring_strike"
+  },
+  "supported_items": "#infested_swarms_spiders:enchantable/ensnaring_strike",
+  "slots": [
+    "hand"
+  ],
+  "weight": 5,
+  "max_level": 3,
+  "anvil_cost": 10,
+  "max_cost": {
+    "base": 40,
+    "per_level_above_first": 15
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 15
+  },
+  "effects": {
+
+    }
+}

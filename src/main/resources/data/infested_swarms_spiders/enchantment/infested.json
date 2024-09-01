@@ -1,0 +1,24 @@
+{
+  "description": {
+    "translate": "enchantment.infested_swarms_spiders.infested"
+  },
+  "supported_items": "#infested_swarms_spiders:enchantable/infested",
+  "slots": [
+    "chest",
+    "hand"
+  ],
+  "weight": 10,
+  "max_level": 2,
+  "anvil_cost": 10,
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 5
+  },
+  "min_cost": {
+    "base": 3,
+    "per_level_above_first": 5
+  },
+  "effects": {
+
+    }
+}
