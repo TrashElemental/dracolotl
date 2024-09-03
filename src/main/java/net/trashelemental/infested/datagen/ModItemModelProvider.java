@@ -1,5 +1,6 @@
 package net.trashelemental.infested.datagen;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -52,18 +53,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         withExistingParent(ModBlocks.COBWEB_TRAP.getId().getPath(),
                 modLoc("item/cobweb_trap_item"));
 
-       // withExistingParent(ModItems.CRIMSON_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        //withExistingParent(ModItems.GRUB_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-       // withExistingParent(ModItems.BRILLIANT_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-       // withExistingParent(ModItems.MANTIS_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        //withExistingParent(ModItems.ORCHID_MANTIS_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        SpawnEggItem("crimson_beetle");
+        SpawnEggItem("grub");
+        SpawnEggItem("brilliant_beetle");
+        SpawnEggItem("mantis");
+        SpawnEggItem("orchid_mantis");
 
-        //withExistingParent(ModItems.HARVEST_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        //withExistingParent(ModItems.JEWEL_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        //withExistingParent(ModItems.CHORUS_BEETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        //withExistingParent(ModItems.ANCIENT_DEBREETLE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-
-
+        SpawnEggItem("harvest_beetle");
+        SpawnEggItem("jewel_beetle");
+        SpawnEggItem("chorus_beetle");
+        SpawnEggItem("ancient_debreetle");
 
     }
 
@@ -85,6 +84,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(blockId.getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", modLoc("block/" + baseBlockId.getPath()));
+    }
+
+    //idk if this is how you're "supposed" to be doing it or whatever, but it seems to be working
+    private void SpawnEggItem(String entityName) {
+        withExistingParent(entityName + "_spawn_egg", "item/template_spawn_egg");
     }
 
 }

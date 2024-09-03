@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "nether_wastes"
+  ],
+  "spawners": [
+    {
+      "type": "infested_swarms_spiders:grub",
+      "weight": 75,
+      "minCount": 2,
+      "maxCount": 4
+    }
+  ]
+}
+

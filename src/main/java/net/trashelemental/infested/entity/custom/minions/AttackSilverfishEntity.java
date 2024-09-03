@@ -29,7 +29,6 @@ public class AttackSilverfishEntity extends Animal {
 
     public AttackSilverfishEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.xpReward = 0;
     }
 
     @Override
@@ -126,8 +125,10 @@ public class AttackSilverfishEntity extends Animal {
         }
     }
 
-
-
-
+    //No XP farming for you
+    @Override
+    public boolean shouldDropExperience() {
+        return false;
+    }
 
 }

@@ -1,9 +1,11 @@
 package net.trashelemental.infested.util;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.trashelemental.infested.InfestedSwarmsAndSpiders;
@@ -27,6 +29,12 @@ public class ModTags {
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(InfestedSwarmsAndSpiders.MOD_ID, name));
         }
+    }
+
+    public static class EntityTags {
+
+        public static final TagKey<EntityType<?>> MANTIS_PREY = TagKey.create(Registries.ENTITY_TYPE, InfestedSwarmsAndSpiders.prefix( "mantis_prey"));
+
     }
 
 }

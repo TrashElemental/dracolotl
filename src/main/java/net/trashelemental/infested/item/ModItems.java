@@ -2,14 +2,18 @@ package net.trashelemental.infested.item;
 
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.trashelemental.infested.InfestedSwarmsAndSpiders;
+import net.trashelemental.infested.entity.ModEntities;
 import net.trashelemental.infested.item.armor.custom.ChitinArmorItem;
 import net.trashelemental.infested.item.armor.custom.SpiderArmorItem;
 import net.trashelemental.infested.item.custom.BugStewItem;
 import net.trashelemental.infested.item.custom.SilverfishEggsItem;
 import net.trashelemental.infested.item.custom.SpiderEggItem;
+
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(InfestedSwarmsAndSpiders.MOD_ID);
@@ -70,25 +74,25 @@ public class ModItems {
 
 
     //Spawn Eggs
-    //public static final DeferredItem<Item> CRIMSON_BEETLE_SPAWN_EGG = ITEMS.register("crimson_beetle_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.CRIMSON_BEETLE, -7271926, -14415607, new Item.Properties()));
-   // public static final RegistryObject<Item> GRUB_SPAWN_EGG = ITEMS.register("grub_spawn_egg",
-   //         () -> new ForgeSpawnEggItem(ModEntities.GRUB, -3361401, -7720655, new Item.Properties()));
-   // public static final RegistryObject<Item> BRILLIANT_BEETLE_SPAWN_EGG = ITEMS.register("brilliant_beetle_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.BRILLIANT_BEETLE, -12109477, -16723242, new Item.Properties()));
-    //public static final RegistryObject<Item> MANTIS_SPAWN_EGG = ITEMS.register("mantis_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.MANTIS, -16751104, -13382656, new Item.Properties()));
-   // public static final RegistryObject<Item> ORCHID_MANTIS_SPAWN_EGG = ITEMS.register("orchid_mantis_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.ORCHID_MANTIS, -1270065, -6666, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> CRIMSON_BEETLE_SPAWN_EGG = ITEMS.register("crimson_beetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.CRIMSON_BEETLE, -7271926, -14415607, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> GRUB_SPAWN_EGG = ITEMS.register("grub_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.GRUB, -3361401, -7720655, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> BRILLIANT_BEETLE_SPAWN_EGG = ITEMS.register("brilliant_beetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.BRILLIANT_BEETLE, -12109477, -16723242, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> MANTIS_SPAWN_EGG = ITEMS.register("mantis_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.MANTIS, -16751104, -13382656, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> ORCHID_MANTIS_SPAWN_EGG = ITEMS.register("orchid_mantis_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.ORCHID_MANTIS, -1270065, -6666, new Item.Properties()));
 
-   // public static final RegistryObject<Item> HARVEST_BEETLE_SPAWN_EGG = ITEMS.register("harvest_beetle_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.HARVEST_BEETLE, -13408768, -6684826, new Item.Properties()));
-   // public static final RegistryObject<Item> JEWEL_BEETLE_SPAWN_EGG = ITEMS.register("jewel_beetle_spawn_egg",
-   //         () -> new ForgeSpawnEggItem(ModEntities.JEWEL_BEETLE, -6711040, -103, new Item.Properties()));
-   // public static final RegistryObject<Item> CHORUS_BEETLE_SPAWN_EGG = ITEMS.register("chorus_beetle_spawn_egg",
-   //         () -> new ForgeSpawnEggItem(ModEntities.CHORUS_BEETLE, -6983240, -13057, new Item.Properties()));
-   // public static final RegistryObject<Item> ANCIENT_DEBREETLE_SPAWN_EGG = ITEMS.register("ancient_debreetle_spawn_egg",
-    //        () -> new ForgeSpawnEggItem(ModEntities.ANCIENT_DEBREETLE, -12308191, -8705266, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> HARVEST_BEETLE_SPAWN_EGG = ITEMS.register("harvest_beetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.HARVEST_BEETLE, -13408768, -6684826, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> JEWEL_BEETLE_SPAWN_EGG = ITEMS.register("jewel_beetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.JEWEL_BEETLE, -6711040, -103, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> CHORUS_BEETLE_SPAWN_EGG = ITEMS.register("chorus_beetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.CHORUS_BEETLE, -6983240, -13057, new Item.Properties()));
+    public static final Supplier<DeferredSpawnEggItem> ANCIENT_DEBREETLE_SPAWN_EGG = ITEMS.register("ancient_debreetle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.ANCIENT_DEBREETLE, -12308191, -8705266, new Item.Properties()));
 
 
 

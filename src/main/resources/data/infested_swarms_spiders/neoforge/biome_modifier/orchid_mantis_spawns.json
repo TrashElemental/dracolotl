@@ -1,0 +1,18 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "flower_forest",
+    "sunflower_plains",
+    "meadow",
+    "cherry_grove"
+  ],
+  "spawners": [
+    {
+      "type": "infested_swarms_spiders:orchid_mantis",
+      "weight": 10,
+      "minCount": 1,
+      "maxCount": 2
+    }
+  ]
+}
+

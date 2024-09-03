@@ -7,7 +7,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.trashelemental.infested.InfestedSwarmsAndSpiders;
-import net.trashelemental.infested.entity.custom.TamedSpiderEntity;
+import net.trashelemental.infested.entity.custom.*;
+import net.trashelemental.infested.entity.custom.jewel_beetles.AncientDebreetleEntity;
+import net.trashelemental.infested.entity.custom.jewel_beetles.ChorusBeetleEntity;
+import net.trashelemental.infested.entity.custom.jewel_beetles.HarvestBeetleEntity;
+import net.trashelemental.infested.entity.custom.jewel_beetles.JewelBeetleEntity;
 import net.trashelemental.infested.entity.custom.minions.AttackSilverfishEntity;
 import net.trashelemental.infested.entity.custom.minions.AttackSpiderEntity;
 import net.trashelemental.infested.entity.custom.minions.SilverfishMinionEntity;
@@ -18,35 +22,35 @@ public class ModEntities {
 
 
 //Naturally Spawning Mobs
-//    public static final DeferredHolder<EntityType<?>, EntityType<CrimsonBeetleEntity>> CRIMSON_BEETLE =
-//            ENTITY_TYPES.register("crimson_beetle", () -> EntityType.Builder.of(CrimsonBeetleEntity::new, MobCategory.AMBIENT)
-//                    .sized(0.6f, 0.5f).build("crimson_beetle"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<GrubEntity>> GRUB =
-//            ENTITY_TYPES.register("grub", () -> EntityType.Builder.of(GrubEntity::new, MobCategory.AMBIENT)
-//                    .sized(0.4f, 0.3f).build("grub"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<BrilliantBeetleEntity>> BRILLIANT_BEETLE =
-//            ENTITY_TYPES.register("brilliant_beetle", () -> EntityType.Builder.of(BrilliantBeetleEntity::new, MobCategory.CREATURE)
-//                    .sized(1.5f, 1f).build("brilliant_beetle"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<MantisEntity>> MANTIS =
-//            ENTITY_TYPES.register("mantis", () -> EntityType.Builder.of(MantisEntity::new, MobCategory.CREATURE)
-//                    .sized(1.5f, 1f).build("mantis"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<OrchidMantisEntity>> ORCHID_MANTIS =
-//            ENTITY_TYPES.register("orchid_mantis", () -> EntityType.Builder.of(OrchidMantisEntity::new, MobCategory.CREATURE)
-//                    .sized(1.5f, 1f).build("orchid_mantis"));
+    public static final DeferredHolder<EntityType<?>, EntityType<CrimsonBeetleEntity>> CRIMSON_BEETLE =
+            ENTITY_TYPES.register("crimson_beetle", () -> EntityType.Builder.of(CrimsonBeetleEntity::new, MobCategory.AMBIENT)
+                    .sized(0.6f, 0.5f).build("crimson_beetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<GrubEntity>> GRUB =
+            ENTITY_TYPES.register("grub", () -> EntityType.Builder.of(GrubEntity::new, MobCategory.AMBIENT)
+                    .sized(0.4f, 0.3f).build("grub"));
+    public static final DeferredHolder<EntityType<?>, EntityType<BrilliantBeetleEntity>> BRILLIANT_BEETLE =
+            ENTITY_TYPES.register("brilliant_beetle", () -> EntityType.Builder.of(BrilliantBeetleEntity::new, MobCategory.CREATURE)
+                    .sized(1.5f, 1f).build("brilliant_beetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<MantisEntity>> MANTIS =
+            ENTITY_TYPES.register("mantis", () -> EntityType.Builder.of(MantisEntity::new, MobCategory.CREATURE)
+                    .sized(1.5f, 1f).build("mantis"));
+    public static final DeferredHolder<EntityType<?>, EntityType<OrchidMantisEntity>> ORCHID_MANTIS =
+            ENTITY_TYPES.register("orchid_mantis", () -> EntityType.Builder.of(OrchidMantisEntity::new, MobCategory.CREATURE)
+                    .sized(1.5f, 1f).build("orchid_mantis"));
 
 //Jewel Beetles
-//    public static final DeferredHolder<EntityType<?>, EntityType<HarvestBeetleEntity>> HARVEST_BEETLE =
-//            ENTITY_TYPES.register("harvest_beetle", () -> EntityType.Builder.of(HarvestBeetleEntity::new, MobCategory.CREATURE)
-//                    .sized(0.8f, 0.8f).build("harvest_beetle"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<JewelBeetleEntity>> JEWEL_BEETLE =
-//            ENTITY_TYPES.register("jewel_beetle", () -> EntityType.Builder.of(JewelBeetleEntity::new, MobCategory.CREATURE)
-//                    .sized(0.8f, 0.8f).build("jewel_beetle"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<ChorusBeetleEntity>> CHORUS_BEETLE =
-//            ENTITY_TYPES.register("chorus_beetle", () -> EntityType.Builder.of(ChorusBeetleEntity::new, MobCategory.CREATURE)
-//                    .sized(0.8f, 0.8f).build("chorus_beetle"));
-//    public static final DeferredHolder<EntityType<?>, EntityType<AncientDebreetleEntity>> ANCIENT_DEBREETLE =
-//            ENTITY_TYPES.register("ancient_debreetle", () -> EntityType.Builder.of(AncientDebreetleEntity::new, MobCategory.CREATURE)
-//                    .sized(0.8f, 0.8f).build("ancient_debreetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<HarvestBeetleEntity>> HARVEST_BEETLE =
+            ENTITY_TYPES.register("harvest_beetle", () -> EntityType.Builder.of(HarvestBeetleEntity::new, MobCategory.CREATURE)
+                    .sized(0.8f, 0.8f).build("harvest_beetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<JewelBeetleEntity>> JEWEL_BEETLE =
+            ENTITY_TYPES.register("jewel_beetle", () -> EntityType.Builder.of(JewelBeetleEntity::new, MobCategory.CREATURE)
+                    .sized(0.8f, 0.8f).build("jewel_beetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<ChorusBeetleEntity>> CHORUS_BEETLE =
+            ENTITY_TYPES.register("chorus_beetle", () -> EntityType.Builder.of(ChorusBeetleEntity::new, MobCategory.CREATURE)
+                    .sized(0.8f, 0.8f).build("chorus_beetle"));
+    public static final DeferredHolder<EntityType<?>, EntityType<AncientDebreetleEntity>> ANCIENT_DEBREETLE =
+            ENTITY_TYPES.register("ancient_debreetle", () -> EntityType.Builder.of(AncientDebreetleEntity::new, MobCategory.CREATURE)
+                    .sized(0.8f, 0.8f).build("ancient_debreetle"));
 
 //Minions and Temporary Mobs
     public static final DeferredHolder<EntityType<?>, EntityType<SilverfishMinionEntity>> SILVERFISH_MINION =

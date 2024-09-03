@@ -25,7 +25,6 @@ public class SilverfishMinionEntity extends TamableAnimal {
     public SilverfishMinionEntity(EntityType<? extends TamableAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.isTame = false;
-        this.xpReward = 0;
     }
 
     @Override
@@ -146,6 +145,10 @@ public class SilverfishMinionEntity extends TamableAnimal {
         }
     }
 
-
+    //No XP farming for you
+    @Override
+    public boolean shouldDropExperience() {
+        return false;
+    }
 
 }

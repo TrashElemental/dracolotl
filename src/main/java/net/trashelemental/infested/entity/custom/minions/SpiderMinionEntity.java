@@ -31,6 +31,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
+@SuppressWarnings("deprecation")
 public class SpiderMinionEntity extends TamableAnimal {
 
 
@@ -38,7 +39,6 @@ public class SpiderMinionEntity extends TamableAnimal {
     public SpiderMinionEntity(EntityType<? extends TamableAnimal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.isTame = false;
-        this.xpReward = 0;
     }
 
     @Override
@@ -223,6 +223,10 @@ public class SpiderMinionEntity extends TamableAnimal {
         }
     }
 
-
+    //No XP farming for you
+    @Override
+    public boolean shouldDropExperience() {
+        return false;
+    }
 
 }

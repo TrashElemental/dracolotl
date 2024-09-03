@@ -5,14 +5,18 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.trashelemental.infested.block.ModBlocks;
 import net.trashelemental.infested.entity.ModEntities;
-import net.trashelemental.infested.entity.client.renderers.TamedSpiderRenderer;
+import net.trashelemental.infested.entity.client.renderers.*;
+import net.trashelemental.infested.entity.client.renderers.jewel_beetles.AncientDebreetleRenderer;
+import net.trashelemental.infested.entity.client.renderers.jewel_beetles.ChorusBeetleRenderer;
+import net.trashelemental.infested.entity.client.renderers.jewel_beetles.HarvestBeetleRenderer;
+import net.trashelemental.infested.entity.client.renderers.jewel_beetles.JewelBeetleRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.AttackSilverfishRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.AttackSpiderRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.SilverfishMinionRenderer;
 import net.trashelemental.infested.entity.client.renderers.minions.SpiderMinionRenderer;
 import net.trashelemental.infested.item.ModCreativeModeTabs;
 import net.trashelemental.infested.item.ModItems;
-import net.trashelemental.infested.magic.brewing.ModPotions;
+import net.trashelemental.infested.magic.brewing.ModAlchemy;
 import net.trashelemental.infested.magic.effects.ModMobEffects;
 import org.slf4j.Logger;
 
@@ -54,7 +58,7 @@ public class InfestedSwarmsAndSpiders
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModPotions.register(modEventBus);
+        ModAlchemy.register(modEventBus);
         ModMobEffects.register(modEventBus);
         ModEntities.register(modEventBus);
 
@@ -91,16 +95,16 @@ public class InfestedSwarmsAndSpiders
             EntityRenderers.register(ModEntities.ATTACK_SPIDER.get(), AttackSpiderRenderer::new);
             EntityRenderers.register(ModEntities.TAMED_SPIDER.get(), TamedSpiderRenderer::new);
 
-//            EntityRenderers.register(ModEntities.CRIMSON_BEETLE.get(), CrimsonBeetleRenderer::new);
-//            EntityRenderers.register(ModEntities.GRUB.get(), GrubRenderer::new);
-//            EntityRenderers.register(ModEntities.BRILLIANT_BEETLE.get(), BrilliantBeetleRenderer::new);
-//            EntityRenderers.register(ModEntities.MANTIS.get(), MantisRenderer::new);
-//            EntityRenderers.register(ModEntities.ORCHID_MANTIS.get(), OrchidMantisRenderer::new);
+            EntityRenderers.register(ModEntities.CRIMSON_BEETLE.get(), CrimsonBeetleRenderer::new);
+            EntityRenderers.register(ModEntities.GRUB.get(), GrubRenderer::new);
+            EntityRenderers.register(ModEntities.BRILLIANT_BEETLE.get(), BrilliantBeetleRenderer::new);
+            EntityRenderers.register(ModEntities.MANTIS.get(), MantisRenderer::new);
+            EntityRenderers.register(ModEntities.ORCHID_MANTIS.get(), OrchidMantisRenderer::new);
 
-//            EntityRenderers.register(ModEntities.HARVEST_BEETLE.get(), HarvestBeetleRenderer::new);
-//            EntityRenderers.register(ModEntities.JEWEL_BEETLE.get(), JewelBeetleRenderer::new);
-//            EntityRenderers.register(ModEntities.CHORUS_BEETLE.get(), ChorusBeetleRenderer::new);
-//            EntityRenderers.register(ModEntities.ANCIENT_DEBREETLE.get(), AncientDebreetleRenderer::new);
+            EntityRenderers.register(ModEntities.HARVEST_BEETLE.get(), HarvestBeetleRenderer::new);
+            EntityRenderers.register(ModEntities.JEWEL_BEETLE.get(), JewelBeetleRenderer::new);
+            EntityRenderers.register(ModEntities.CHORUS_BEETLE.get(), ChorusBeetleRenderer::new);
+            EntityRenderers.register(ModEntities.ANCIENT_DEBREETLE.get(), AncientDebreetleRenderer::new);
 
         }
     }

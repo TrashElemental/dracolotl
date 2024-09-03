@@ -42,6 +42,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+@SuppressWarnings("deprecation")
 public class TamedSpiderEntity extends TamableAnimal {
 
 

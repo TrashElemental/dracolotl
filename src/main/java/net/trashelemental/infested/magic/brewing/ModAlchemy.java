@@ -18,7 +18,7 @@ import net.trashelemental.infested.InfestedSwarmsAndSpiders;
 import net.trashelemental.infested.item.ModItems;
 
 @EventBusSubscriber
-public class ModPotions {
+public class ModAlchemy {
     public static final DeferredRegister<Potion> REGISTRY = DeferredRegister.create(Registries.POTION, InfestedSwarmsAndSpiders.MOD_ID);
 
 

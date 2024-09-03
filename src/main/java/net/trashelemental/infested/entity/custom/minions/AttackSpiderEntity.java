@@ -31,13 +31,13 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
+@SuppressWarnings("deprecation")
 public class AttackSpiderEntity extends Animal {
 
 
 
     public AttackSpiderEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.xpReward = 0;
     }
 
     @Override
@@ -196,6 +196,10 @@ public class AttackSpiderEntity extends Animal {
         }
     }
 
-
+    //No XP farming for you
+    @Override
+    public boolean shouldDropExperience() {
+        return false;
+    }
 
 }

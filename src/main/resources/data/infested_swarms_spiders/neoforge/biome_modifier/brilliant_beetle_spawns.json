@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "jungle",
+    "sparse_jungle"
+  ],
+  "spawners": [
+    {
+      "type": "infested_swarms_spiders:brilliant_beetle",
+      "weight": 12,
+      "minCount": 1,
+      "maxCount": 4
+    }
+  ]
+}
+
