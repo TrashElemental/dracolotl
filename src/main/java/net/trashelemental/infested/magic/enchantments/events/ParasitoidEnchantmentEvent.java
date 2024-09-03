@@ -64,18 +64,20 @@ public class ParasitoidEnchantmentEvent {
             InfestedSwarmsAndSpiders.queueServerWork(20, () -> {
 
                 if (world instanceof ServerLevel serverLevel) {
-                    if (chestArmor.getItem() == spiderChestplate.getItem()) {                   //Spiders if wearing spider chestplate
-                        spawnSpider(serverLevel, entity, sourceEntity, enchantmentLevel);
-                    } else {
+
+                    if (chestArmor.getItem() == spiderChestplate.getItem()) {
+                        spawnSpider(serverLevel, entity, sourceEntity, enchantmentLevel);       //Spiders if wearing spider chestplate
+                    }
+
+                    else {
                         spawnSilverfish(serverLevel, entity, sourceEntity, enchantmentLevel);   //Default (silverfish)
                     }
                 }
 
             });
 
-            if (sourceEntity instanceof Player player && !player.getAbilities().instabuild) {
-                weapon.hurtAndBreak(2, livingSource, EquipmentSlot.MAINHAND);
-            }
+            weapon.hurtAndBreak(2, (LivingEntity) sourceEntity, EquipmentSlot.MAINHAND);
+
         }
     }
 

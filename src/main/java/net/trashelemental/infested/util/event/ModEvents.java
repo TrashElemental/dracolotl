@@ -61,7 +61,12 @@ public class ModEvents {
 
         //Right-clicking a tamed Arthropod with a Raw Grub will heal it for 10 health.
         if (itemStack.getItem() == ModItems.RAW_GRUB.get() && targetEntity instanceof LivingEntity livingEntity) {
-            if (livingEntity.getType().is(EntityTypeTags.ARTHROPOD) && livingEntity instanceof TamableAnimal tamableAnimal && tamableAnimal.isOwnedBy(player)) {
+            if ((
+                    livingEntity.getType().is(EntityTypeTags.ARTHROPOD) ||
+                    isCommonArthropodName(livingEntity.getName().getString())) &&
+                    livingEntity instanceof TamableAnimal tamableAnimal &&
+                    tamableAnimal.isOwnedBy(player))
+            {
                 if (!event.getLevel().isClientSide) {
 
                     livingEntity.heal(10.0F);
@@ -260,5 +265,18 @@ public class ModEvents {
         InfestedSwarmsAndSpiders.queueServerWork(10, () ->
                 level.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.NEUTRAL, 1.0F, 1.0F));
 
+    }
+
+    //some common bug names because y'all don't know how to tag your gosh darn arthropods
+    private static boolean isCommonArthropodName(String name) {
+        String lowerCaseName = name.toLowerCase();
+        return lowerCaseName.contains("spider") ||
+                lowerCaseName.contains("beetle") ||
+                lowerCaseName.contains("bee") ||
+                lowerCaseName.contains("grasshopper") ||
+                lowerCaseName.contains("dragonfly") ||
+                lowerCaseName.contains("bug") ||
+                lowerCaseName.contains("insect") ||
+                lowerCaseName.contains("swarmer");
     }
 }

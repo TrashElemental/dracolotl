@@ -1,5 +1,6 @@
 package net.trashelemental.infested.item;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -7,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.trashelemental.infested.InfestedSwarmsAndSpiders;
 import net.trashelemental.infested.entity.ModEntities;
+import net.trashelemental.infested.item.armor.ModArmorMaterials;
 import net.trashelemental.infested.item.armor.custom.ChitinArmorItem;
 import net.trashelemental.infested.item.armor.custom.SpiderArmorItem;
 import net.trashelemental.infested.item.custom.BugStewItem;
@@ -51,26 +53,30 @@ public class ModItems {
 
     //Armor Items
     public static final DeferredItem<Item> CHITIN_HELMET = ITEMS.register("chitin_helmet",
-            () -> new ChitinArmorItem(new Item.Properties()));
-         //   ChitinArmorItem.Helmet::new);
+            () -> new ChitinArmorItem(ModArmorMaterials.CHITIN, ArmorItem.Type.HELMET, new Item.Properties()
+                    .stacksTo(1).durability(165)));
     public static final DeferredItem<Item> CHITIN_CHESTPLATE = ITEMS.register("chitin_chestplate",
-                 () -> new ChitinArmorItem(new Item.Properties()));
-           // ChitinArmorItem.Chestplate::new);
+                 () -> new ChitinArmorItem(ModArmorMaterials.CHITIN, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+                         .stacksTo(1).durability(240)));
     public static final DeferredItem<Item> CHITIN_LEGGINGS = ITEMS.register("chitin_leggings",
-                   () -> new ChitinArmorItem(new Item.Properties()));
-            // ChitinArmorItem.Leggings::new);
+                   () -> new ChitinArmorItem(ModArmorMaterials.CHITIN, ArmorItem.Type.LEGGINGS, new Item.Properties()
+                           .stacksTo(1).durability(225)));
     public static final DeferredItem<Item> CHITIN_BOOTS = ITEMS.register("chitin_boots",
-                    () -> new ChitinArmorItem(new Item.Properties()));
-            // ChitinArmorItem.Boots::new);
+                    () -> new ChitinArmorItem(ModArmorMaterials.CHITIN, ArmorItem.Type.BOOTS, new Item.Properties()
+                            .stacksTo(1).durability(195)));
 
     public static final DeferredItem<Item> SPIDER_HELMET = ITEMS.register("spider_helmet",
-            () -> new SpiderArmorItem(new Item.Properties()));
+            () -> new SpiderArmorItem(ModArmorMaterials.SPIDER, ArmorItem.Type.HELMET, new Item.Properties()
+                    .stacksTo(1).durability(165)));
     public static final DeferredItem<Item> SPIDER_CHESTPLATE = ITEMS.register("spider_chestplate",
-            () -> new SpiderArmorItem(new Item.Properties()));
+            () -> new SpiderArmorItem(ModArmorMaterials.SPIDER, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+                    .stacksTo(1).durability(240)));
     public static final DeferredItem<Item> SPIDER_LEGGINGS = ITEMS.register("spider_leggings",
-            () -> new SpiderArmorItem(new Item.Properties()));
+            () -> new SpiderArmorItem(ModArmorMaterials.SPIDER, ArmorItem.Type.LEGGINGS, new Item.Properties()
+                    .stacksTo(1).durability(225)));
     public static final DeferredItem<Item> SPIDER_BOOTS = ITEMS.register("spider_boots",
-            () -> new SpiderArmorItem(new Item.Properties()));
+            () -> new SpiderArmorItem(ModArmorMaterials.SPIDER, ArmorItem.Type.BOOTS, new Item.Properties()
+                    .stacksTo(1).durability(195)));
 
 
     //Spawn Eggs

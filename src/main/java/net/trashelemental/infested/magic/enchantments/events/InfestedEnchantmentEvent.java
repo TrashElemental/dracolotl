@@ -83,6 +83,8 @@ public class InfestedEnchantmentEvent {
                 }
 
                 chestArmor.hurtAndBreak(2, livingEntity, EquipmentSlot.CHEST);
+
+
             }
         }
     }

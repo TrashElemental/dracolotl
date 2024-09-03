@@ -16,6 +16,7 @@ import net.trashelemental.infested.entity.client.renderers.minions.SilverfishMin
 import net.trashelemental.infested.entity.client.renderers.minions.SpiderMinionRenderer;
 import net.trashelemental.infested.item.ModCreativeModeTabs;
 import net.trashelemental.infested.item.ModItems;
+import net.trashelemental.infested.item.armor.ModArmorMaterials;
 import net.trashelemental.infested.magic.brewing.ModAlchemy;
 import net.trashelemental.infested.magic.effects.ModMobEffects;
 import org.slf4j.Logger;
@@ -61,6 +62,7 @@ public class InfestedSwarmsAndSpiders
         ModAlchemy.register(modEventBus);
         ModMobEffects.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModArmorMaterials.register(modEventBus);
 
     }
 
