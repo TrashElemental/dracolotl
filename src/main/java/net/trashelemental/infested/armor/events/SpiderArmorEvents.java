@@ -1,4 +1,4 @@
-package net.trashelemental.infested.item.armor.events;
+package net.trashelemental.infested.armor.events;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
