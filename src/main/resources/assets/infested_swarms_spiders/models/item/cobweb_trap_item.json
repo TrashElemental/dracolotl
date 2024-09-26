@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "infested_swarms_spiders:item/cobweb_trap_item"
-  }
-}

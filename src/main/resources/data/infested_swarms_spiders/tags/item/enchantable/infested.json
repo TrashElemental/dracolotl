@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "#minecraft:enchantable/chest_armor",
-    "minecraft:shield"
-  ]
-}
