@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dracolotl:item/bucket_of_dracolotl"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:husbandry/axolotl_in_a_bucket",
+  "criteria": {
+    "has_dracolotl_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dracolotl:bucket_of_dracolotl"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.dracolotl_bucket_get.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "dracolotl:bucket_of_dracolotl"
+    },
+    "title": {
+      "translate": "advancements.dracolotl_bucket_get.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_dracolotl_bucket"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
