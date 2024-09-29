@@ -1,37 +1,40 @@
-[22Aug2024 16:45:00.787] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\conno\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, infested, --all, --output, C:\Users\conno\Documents\Modding Projects\Mods\Infested\Infested - 1.20.1 Forge-NeoForge\src\generated\resources, --existing, C:\Users\conno\Documents\Modding Projects\Mods\Infested\Infested - 1.20.1 Forge-NeoForge\src\main\resources]
-[22Aug2024 16:45:00.790] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[22Aug2024 16:45:00.888] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[22Aug2024 16:45:00.931] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/conno/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[22Aug2024 16:45:01.200] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.1\b9fa98d5c9fa107169a3390a1c8993d2134fbf54\javafmllanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[22Aug2024 16:45:01.203] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.1\aaa252b4d4c34d0c02e647d7a2ef3df3bc11d73a\lowcodelanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[22Aug2024 16:45:01.206] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.1\1722b26446496b5e686cdf124342e8f7fd33dc91\mclanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[22Aug2024 16:45:01.210] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.1\4ed2bfe4ae3a6c27f587d45f58d648db68d19c00\fmlcore-1.20.1-47.3.1.jar is missing mods.toml file
-[22Aug2024 16:45:01.280] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[22Aug2024 16:45:02.520] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\conno\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, infested, --all, --output, C:\Users\conno\Documents\Modding Projects\Mods\Infested\Infested - 1.20.1 Forge-NeoForge\src\generated\resources, --existing, C:\Users\conno\Documents\Modding Projects\Mods\Infested\Infested - 1.20.1 Forge-NeoForge\src\main\resources]
-[22Aug2024 16:45:02.809] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [infested]
-[22Aug2024 16:45:06.389] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.1, for MC 1.20.1 with MCP 20230612.114412
-[22Aug2024 16:45:06.390] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.1 Initialized
-[22Aug2024 16:45:06.597] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[22Aug2024 16:45:06.601] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 2.797 ms
-[22Aug2024 16:45:06.898] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/conno/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[22Aug2024 16:45:06.899] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/conno/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[22Aug2024 16:45:07.017] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[22Aug2024 16:45:07.061] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 43 ms
-[22Aug2024 16:45:07.081] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[22Aug2024 16:45:07.159] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 78 ms
-[22Aug2024 16:45:07.160] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: infested
-[22Aug2024 16:45:07.278] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: infested finished after 118 ms
-[22Aug2024 16:45:07.279] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: infested
-[22Aug2024 16:45:07.288] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: infested finished after 9 ms
-[22Aug2024 16:45:07.288] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id infested
-[22Aug2024 16:45:07.300] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id infested finished after 11 ms
-[22Aug2024 16:45:07.300] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id infested
-[22Aug2024 16:45:07.302] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id infested finished after 1 ms
-[22Aug2024 16:45:07.302] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:entity_type mod id infested
-[22Aug2024 16:45:07.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:entity_type mod id infested finished after 0 ms
-[22Aug2024 16:45:07.303] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : infested
-[22Aug2024 16:45:07.304] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : infested finished after 1 ms
-[22Aug2024 16:45:07.305] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
-[22Aug2024 16:45:07.313] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 8 ms
-[22Aug2024 16:45:07.313] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 295 ms
-[22Aug2024 16:45:07.328] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 187, old count: 187, new count: 188, removed stale: 0, written: 0
+[29Sep2024 10:13:14.429] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\conno\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, dracolotl, --all, --output, C:\Users\conno\Documents\Modding Projects\Dracolotl\Project Folders\1.20.1\src\generated\resources, --existing, C:\Users\conno\Documents\Modding Projects\Dracolotl\Project Folders\1.20.1\src\main\resources]
+[29Sep2024 10:13:14.433] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[29Sep2024 10:13:14.532] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[29Sep2024 10:13:14.580] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/conno/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[29Sep2024 10:13:14.837] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.1\b9fa98d5c9fa107169a3390a1c8993d2134fbf54\javafmllanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[29Sep2024 10:13:14.840] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.1\aaa252b4d4c34d0c02e647d7a2ef3df3bc11d73a\lowcodelanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[29Sep2024 10:13:14.843] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.1\1722b26446496b5e686cdf124342e8f7fd33dc91\mclanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[29Sep2024 10:13:14.846] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\conno\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.1\4ed2bfe4ae3a6c27f587d45f58d648db68d19c00\fmlcore-1.20.1-47.3.1.jar is missing mods.toml file
+[29Sep2024 10:13:14.970] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[29Sep2024 10:13:16.020] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[29Sep2024 10:13:16.023] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\conno\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, dracolotl, --all, --output, C:\Users\conno\Documents\Modding Projects\Dracolotl\Project Folders\1.20.1\src\generated\resources, --existing, C:\Users\conno\Documents\Modding Projects\Dracolotl\Project Folders\1.20.1\src\main\resources]
+[29Sep2024 10:13:16.379] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\conno\Documents\Modding Projects\Dracolotl\Project Folders\1.20.1\build\createSrgToMcp\output.srg
+[29Sep2024 10:13:16.666] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [dracolotl]
+[29Sep2024 10:13:20.282] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.1, for MC 1.20.1 with MCP 20230612.114412
+[29Sep2024 10:13:20.283] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.1 Initialized
+[29Sep2024 10:13:20.348] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[29Sep2024 10:13:20.427] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[29Sep2024 10:13:20.432] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 2.959 ms
+[29Sep2024 10:13:20.685] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/conno/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[29Sep2024 10:13:20.686] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/conno/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[29Sep2024 10:13:20.847] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[29Sep2024 10:13:20.850] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 2 ms
+[29Sep2024 10:13:20.850] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[29Sep2024 10:13:20.931] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 80 ms
+[29Sep2024 10:13:20.932] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: dracolotl
+[29Sep2024 10:13:20.932] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: dracolotl finished after 0 ms
+[29Sep2024 10:13:20.932] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: dracolotl
+[29Sep2024 10:13:20.938] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: dracolotl finished after 6 ms
+[29Sep2024 10:13:20.938] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id dracolotl
+[29Sep2024 10:13:20.954] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id dracolotl finished after 15 ms
+[29Sep2024 10:13:20.954] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id dracolotl
+[29Sep2024 10:13:20.955] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id dracolotl finished after 0 ms
+[29Sep2024 10:13:20.955] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:entity_type mod id dracolotl
+[29Sep2024 10:13:20.963] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:entity_type mod id dracolotl finished after 7 ms
+[29Sep2024 10:13:20.963] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : dracolotl
+[29Sep2024 10:13:20.964] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : dracolotl finished after 1 ms
+[29Sep2024 10:13:20.964] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Advancements
+[29Sep2024 10:13:20.993] [main/INFO] [net.minecraft.data.DataGenerator/]: Advancements finished after 28 ms
+[29Sep2024 10:13:20.993] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 146 ms
+[29Sep2024 10:13:20.998] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 6, old count: 6, new count: 7, removed stale: 0, written: 0

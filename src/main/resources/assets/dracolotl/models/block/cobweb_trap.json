@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "infested_swarms_spiders:block/cobweb_trap",
+		"particle": "infested_swarms_spiders:block/cobweb_trap"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 1, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"east": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"west": {"uv": [16, 0, 0, 1], "texture": "#0"},
+				"up": {"uv": [16, 0, 0, 16], "texture": "#0"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#0"}
+			}
+		}
+	],
+	"render_type": "cutout"
+}

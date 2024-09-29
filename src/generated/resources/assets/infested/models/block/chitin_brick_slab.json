@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "infested:block/chitin_bricks",
-    "side": "infested:block/chitin_bricks",
-    "top": "infested:block/chitin_bricks"
-  }
-}
