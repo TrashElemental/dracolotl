@@ -36,7 +36,7 @@ public class ModAdvancementProvider extends AdvancementProvider {
                     Component.translatable("advancements.dracolotl_bucket_get.title"),        //Title
                     Component.translatable("advancements.dracolotl_bucket_get.description"),  //Description
                     null, //Should be null unless this is a root advancement
-                    AdvancementType.GOAL,
+                    AdvancementType.CHALLENGE,
                     true,
                     true,
                     true

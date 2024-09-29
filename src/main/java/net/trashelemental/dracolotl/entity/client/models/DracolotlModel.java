@@ -2,7 +2,6 @@ package net.trashelemental.dracolotl.entity.client.models;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.trashelemental.dracolotl.dracolotl;
 import net.trashelemental.dracolotl.entity.custom.DracolotlEntity;
 import software.bernie.geckolib.animation.AnimationState;
 import software.bernie.geckolib.cache.object.GeoBone;

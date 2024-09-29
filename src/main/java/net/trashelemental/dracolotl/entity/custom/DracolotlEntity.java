@@ -30,8 +30,6 @@ import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.entity.animal.Bee;
-import net.minecraft.world.entity.animal.axolotl.Axolotl;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -39,7 +37,6 @@ import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.neoforged.neoforge.fluids.FluidType;
 import net.trashelemental.dracolotl.dracolotl;
 import net.trashelemental.dracolotl.item.ModItems;
 import net.trashelemental.dracolotl.util.ModBucketableInterface;
@@ -48,8 +45,8 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
-import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.*;
 
 import java.util.List;
 import java.util.Objects;
@@ -242,11 +239,10 @@ public class DracolotlEntity extends TamableAnimal implements GeoEntity, ModBuck
     public void saveToBucketTag(ItemStack stack) {
         ModBucketableInterface.saveDefaultDataToBucketTag(this, stack);
         CustomData.update(DataComponents.BUCKET_ENTITY_DATA, stack, (data) -> {
-            // Save tame status
-            if (this.isTame()) {
-                data.putBoolean("IsTame", true);  // Save tamed status
 
-                // Save owner UUID if tamed
+            if (this.isTame()) {
+                data.putBoolean("IsTame", true);
+
                 if (this.getOwnerUUID() != null) {
                     data.putUUID("OwnerUUID", this.getOwnerUUID());
                 }
@@ -301,6 +297,7 @@ public class DracolotlEntity extends TamableAnimal implements GeoEntity, ModBuck
                 source.is(DamageTypes.FIREBALL) ||
                 source.is(DamageTypes.UNATTRIBUTED_FIREBALL) ||
                 source.is(DamageTypes.LAVA) ||
+                source.is(DamageTypes.HOT_FLOOR) ||
                 source.is(DamageTypes.DRAGON_BREATH)
         ) return false;
 
@@ -350,11 +347,6 @@ public class DracolotlEntity extends TamableAnimal implements GeoEntity, ModBuck
         }
 
     }
-
-
-
-    //Swimming
-
 
 
 
@@ -488,7 +480,7 @@ public class DracolotlEntity extends TamableAnimal implements GeoEntity, ModBuck
 
 
     //Behavior
-    private String BEHAVIOR = "WANDER";
+    public String BEHAVIOR = "WANDER";
 
     private void setBehaviorInPersistentData(String behavior) {
         CompoundTag tag = this.getPersistentData();

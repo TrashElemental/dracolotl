@@ -16,7 +16,7 @@
     "description": {
       "translate": "advancements.dracolotl_bucket_get.description"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "hidden": true,
     "icon": {
       "count": 1,

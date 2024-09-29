@@ -2,16 +2,7 @@ Dracolotl
  
 A small mod that adds the ability to hatch the Dragon Egg into a Dracolotl, a loyal pet that can fly, attack your foes, and be bucketed.
 
-	---Entities---
-
-- Dracolotl
-* Can be summoned by creating a pattern on the ground meant to resemble the portal to the Overworld that the Dragon Egg spawns on in the End. This is the minimum required:
-	    0		    0 <- 1 block of Obsidian or Bedrock with End Crystal on top (it's the End Crystal that's important)
-			        1 <- 3 blocks of Obsidian with a Dragon Egg on top.
-    0   1   0
-	
-	    0
-When the Dragon Egg is interacted with while the pattern is complete, some particles and sounds will play, and a Dracolotl will be spawned, tamed by whoever hatched it. The End Crystals and Dragon Egg will be consumed.
+Config: Craft a bucket of Axolotl with four end crystals and four Chorus Flowers to get a Bucket of Dracolotl
 
 
 
